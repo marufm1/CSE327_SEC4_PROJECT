@@ -40,7 +40,7 @@ Then copy the contents of the object_detection folder downloaded in step 2 of do
 2. We need to copy the repo downloaded in the downloads step to the C:
 3. Install Tensorflow by issuing the following command: pip install tensorflow==1.5
 
-
+We need to open the Ananconda Prompt as Run as Administrator and do the following:
 
 Create a new acnaconda virtual environment:
 
