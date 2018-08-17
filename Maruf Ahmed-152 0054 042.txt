@@ -9,6 +9,24 @@ Tasks:
 4. Tested and ran the object detector by making a Object_detection_banana_image.py
 5. Added changes to the README.md file and wrote the instructions for running the program.
 6. Fixed errors and bugs to make the program run properly.
+7. Will try to add more functionalities.
+8. banana folder also uploaded in images
+
+
+Difficulties faced:
+1. All the installation procedures were very difficult due to having version mismatch and more problems
+2. The training process showed errors due to some version problems
+3. The training process takes a lot of time (approximately 20 hours)
+4. Learning everything about tensorflow took all of us a huge amount of time as we are all unfamiliar with the things
+5. There wasn't a proper guideline in the internet that would help us go through all the processes without any errors
+
+Overcoming the difficulties:
+We managed to solve all the problems mentioned above but we did take a very long time in understanding every thing to make
+this possible. We didn't even have access to a very good machine which could help with the training process and also save
+us some time as the Tensorflow Training process takes a huge amount of time as mentioned before. Using the GPU version which
+needs a very good GPU would have made the process faster but was we didn't have access to a good GPU we had to train using 
+CPU and we made things possible.
+
 
 
 
