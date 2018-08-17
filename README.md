@@ -3,6 +3,12 @@
 Here is the guide to installing all the dependencies required to run the program.
 We are using Anaconda with Python 3.6.5 and Tensorflow CPU v1.5 
 
+# Description:
+
+Our project is about detecting different types of fruits with the help of deep learning using the object detection Tensorflow API and also OpenCV for image processing via images, webcam, recorded video file (mov). In this project, we used Tensorflow to train multiple objects which are fruits in our case (example: Mango, Banana, Orange etc). We had to figure out to use the Tensoflow CPU version instead of using the faster GPU version as we don’t have access to a good enough GPU. At first, we used the Faster_rcnn model but then we switched to SSD_mobilenet which had lower accuracy but faster detection. The training process for each object took about 20+ hours. After the training process was done we could run our script to see the detected object with the help of some image processing done through OpenCV.
+
+
+
 # Downloads
 
 # For just running the program:
