@@ -1,0 +1,15 @@
+
+Maruf Ahmed
+152 0054 042
+
+Tasks:
+1. Training process of the Banana object. Trained it for 16 hours.
+2. Added the frozen_inference_graph_banana.pb in iference_graph folder
+3. Added the banana_labelmap.pbtxt file in training folder
+4. Tested and ran the object detector by making a Object_detection_banana_image.py
+5. Added changes to the README.md file and wrote the instructions for running the program.
+6. Fixed errors and bugs to make the program run properly.
+
+
+
+
