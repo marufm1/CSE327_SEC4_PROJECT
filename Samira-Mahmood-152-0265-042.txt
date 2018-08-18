@@ -1,0 +1,19 @@
+
+Samira Mahmood
+152 0265 042
+
+Tasks:
+1. Collected Mango images from google and labeled them using labelImg for the training process.Mango folder images inside object_detection/images/mango.
+2. Added the mango_labelmap.pbtxt in object_detector/training.
+3. Train the Mango object. Trained it for 23 hours.
+4. Created the Object_detection_mango_image.py which is used to run and test the mango object detector using the test_mango.jpg inside object_detection folder.
+5. After the training process completed generated the frozen_inference_graph.pb file which is inside the object_detection/inference_graph
+6. Update or make changes to the README.md file and also in wrote the description.
+7. Make fixes to code if necessary.
+
+Could you complete? What were the challenges?
+Yes was able to complete the task of classifying my assigned image Mango.It can detect the mango image in a picture with many other objects and also in different 
+backgrounds.It was very difficult in the sense that from the beginning there were a lot of version incompatibiilty issues.As well as not having a computer with
+GPU, had to use tensorflow CPU version because of which the training process took longer around 23 hours.
+
+
