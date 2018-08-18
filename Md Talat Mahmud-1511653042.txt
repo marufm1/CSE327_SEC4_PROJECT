@@ -1,0 +1,10 @@
+Md Talat Mahmud
+1511653042
+
+Task:
+
+	*orange object detection train up
+	*make graph 
+	*orange_labelmap making with python file
+	*test & check if orange detetion is working accurately
+	*use github
