@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>photodune-7027886-orange-slice-xs.jpg</filename>
+	<path>C:\tensorflow1\models\research\object_detection\images\orange\train\photodune-7027886-orange-slice-xs.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>447</width>
+		<height>447</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orange</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>27</xmin>
+			<ymin>43</ymin>
+			<xmax>410</xmax>
+			<ymax>410</ymax>
+		</bndbox>
+	</object>
+</annotation>
