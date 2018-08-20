@@ -12,24 +12,19 @@ sys.path.append("..")
 from utils import label_map_util
 from utils import visualization_utils as vis_util
 
-
 MODEL_NAME = 'inference_graph'
 IMAGE_NAME = 'test_orange.jpg'
 
 CWD_PATH = os.getcwd()
-
 
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph_orange.pb')
 
 
 PATH_TO_LABELS = os.path.join(CWD_PATH,'training','orange_labelmap.pbtxt')
 
-
 PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 
-
 NUM_CLASSES = 1
-
 
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
@@ -45,28 +40,22 @@ with detection_graph.as_default():
 
     sess = tf.Session(graph=detection_graph)
 
-
-
 image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
 
-detection_boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
 
+detection_boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
 
 detection_scores = detection_graph.get_tensor_by_name('detection_scores:0')
 detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
 
-
 num_detections = detection_graph.get_tensor_by_name('num_detections:0')
-
 
 image = cv2.imread(PATH_TO_IMAGE)
 image_expanded = np.expand_dims(image, axis=0)
 
-
 (boxes, scores, classes, num) = sess.run(
     [detection_boxes, detection_scores, detection_classes, num_detections],
     feed_dict={image_tensor: image_expanded})
-
 
 
 vis_util.visualize_boxes_and_labels_on_image_array(
@@ -79,8 +68,10 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     line_thickness=8,
     min_score_thresh=0.80)
 
+
 cv2.imshow('Object detector', image)
 
 cv2.waitKey(0)
+
 
 cv2.destroyAllWindows()
