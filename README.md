@@ -23,7 +23,7 @@ Our project is about detecting different types of fruits with the help of deep l
      b)Then cd to object detection folder and set the path by issuing the command:
        set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
        
-4.After that type "idle" and enter.This will open IDLE and now you can run any of the scripts. 
+4. After that type "idle" and enter.This will open IDLE and now you can run any of the scripts. 
 For eg. Object_detection_mango_image.py and press Run or F5.It will initialize for 10 seconds and then display a window showing any objects it’s detected in the image!
         
   
