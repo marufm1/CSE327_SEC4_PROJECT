@@ -1,0 +1,11 @@
+Md Samiul Basir Rabbi
+ (1511703642)
+
+Task:
+
+	1.Apple object detection train up
+	2.make graph 
+        3.Apple_labelmap making with python 
+	4.test & check if Apple detetion is working accurately
+	5.Collect apple images from google and  Apple folder(images) is also uploaded 
+        6.Use Github 
