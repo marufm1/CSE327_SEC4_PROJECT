@@ -1,0 +1,26 @@
+<annotation>
+  <folder>Test</folder>
+  <filename>82cb4b77762fb7309671bc394c8ef754</filename>
+  <path>C:/Users/My PC/Documents/GitHub/CSE327_SEC4_PROJECT/models/research/object_detection/images/Apple/Test/82cb4b77762fb7309671bc394c8ef754.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>650</width>
+    <height>578</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>apple</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>78</xmin>
+      <ymin>72</ymin>
+      <xmax>484</xmax>
+      <ymax>481</ymax>
+    </bndbox>
+  </object>
+</annotation>

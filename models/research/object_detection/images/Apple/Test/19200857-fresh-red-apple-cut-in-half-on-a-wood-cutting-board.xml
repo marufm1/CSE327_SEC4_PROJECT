@@ -1,0 +1,38 @@
+<annotation>
+  <folder>Test</folder>
+  <filename>19200857-fresh-red-apple-cut-in-half-on-a-wood-cutting-board</filename>
+  <path>C:/Users/My PC/Documents/GitHub/CSE327_SEC4_PROJECT/models/research/object_detection/images/Apple/Test/19200857-fresh-red-apple-cut-in-half-on-a-wood-cutting-board.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1300</width>
+    <height>866</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>apple</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>268</xmin>
+      <ymin>157</ymin>
+      <xmax>885</xmax>
+      <ymax>776</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>apple</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>490</xmin>
+      <ymin>58</ymin>
+      <xmax>1028</xmax>
+      <ymax>479</ymax>
+    </bndbox>
+  </object>
+</annotation>
