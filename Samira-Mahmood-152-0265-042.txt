@@ -8,9 +8,14 @@ Tasks:
 3. Train the Mango object. Trained it for 23 hours.
 4. Created the Object_detection_mango_image.py which is used to run and test the mango object detector using the test_mango.jpg inside object_detection folder.
 5. After the training process completed generated the frozen_inference_graph.pb file which is inside the object_detection/inference_graph
-6. Update or make changes to the README.md file and also in wrote the description.
-7. Added Dockerfile
-8.Edited the python file Object_detection_mango_image.py to implement the Fruits.db and now image mango shows information.
+6.Created another python script the Object_detection_mango_video.py which is used to run and detect the mango object using the test_mango.mp4 inside the
+  object_detection folder.
+7. Update or make changes to the README.md file and also in wrote the description.
+8. Added Dockerfile to create a object detection docker image.
+9.Edited the python file Object_detection_mango_image.py to implement the Fruits.db and now image mango shows information.
+10.Added commenting in Object_detection_mango_image.py and Object_detection_mango_video.py to help understand.
+
+
 
 Could you complete? What were the challenges?
 Yes was able to complete the task of classifying my assigned image Mango.It can detect the mango image in a picture with many other objects and also in different 
