@@ -1,4 +1,4 @@
-
+#importing all the necessary dependencies
 import os
 import cv2
 import numpy as np
@@ -8,11 +8,11 @@ import sys
 
 sys.path.append("..")
 
-
+#Here we are using a newly modified visualization_utils_DB which was edited previously for adding the database support
 from utils import label_map_util
 from utils import visualization_utils_DB as vis_util
 
-
+#Getting the inference graph folder and image name
 MODEL_NAME = 'inference_graph'
 IMAGE_NAME = 'test_banana.jpg'
 
@@ -29,10 +29,10 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','banana_labelmap.pbtxt')
 # Path to image
 PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 
-
+#The number of object to be detected is 1 as this file and frozen graph is only for Banana
 NUM_CLASSES = 1
 
-
+#label map path
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
@@ -65,7 +65,7 @@ image_expanded = np.expand_dims(image, axis=0)
     [detection_boxes, detection_scores, detection_classes, num_detections],
     feed_dict={image_tensor: image_expanded})
 
-
+#This part is used for visualizing the rectangular box on the image and also show the information 
 vis_util.visualize_boxes_and_labels_on_image_array(
     image,
     np.squeeze(boxes),
@@ -76,7 +76,13 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     line_thickness=8,
     min_score_thresh=0.50)
 
-cv2.imshow('Object detector', image)
+#Added the window size so that a bigger image is shown 
+
+cv2.namedWindow('image',cv2.WINDOW_NORMAL)
+cv2.resizeWindow('image', 800,700)
+
+cv2.imshow('image', image)
+
 
 cv2.waitKey(0)
 
