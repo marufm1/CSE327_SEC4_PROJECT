@@ -42,7 +42,8 @@ We need to make sure that the directory of the repo looks like: C:/tensorflow1/m
 2. Download this current repo.
 Then copy the contents of the object_detection folder downloaded in step 2 of downloads and replace with the previously dowbloaded files in C:/tensorflow1/models/research/object_detection/...
 
-
+# Docker
+Dockerfile can be found in the object_detection folder. That file is used to create a docker image and the docker container should be able to run our following program as it will have all the necessary versions of the dependencies installed. Also the Requirements.txt file has been added in the same folder.
 
 # Installation
 
