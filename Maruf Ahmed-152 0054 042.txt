@@ -1,5 +1,4 @@
-
-Maruf Ahmed
+aruf Ahmed
 152 0054 042
 
 Tasks:
@@ -11,6 +10,9 @@ Tasks:
 6. Fixed errors and bugs to make the program run properly.
 7. Will try to add more functionalities.
 8. banana folder also uploaded in images
+9. Added the Requirement.txt file for Docker.
+10. Helped with the Dockerfile
+
 
 
 Difficulties faced:
