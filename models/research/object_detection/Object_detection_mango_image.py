@@ -1,4 +1,6 @@
+######## Image Object Detection Using Tensorflow-trained Classifier ######
 
+#importing necessary packages for image classification#
 import os
 import cv2
 import numpy as np
@@ -7,16 +9,20 @@ import sys
 
 sys.path.append("..")
 
+
+#imported utilities also visualization_utils_db for fruits database
+
 from utils import label_map_util
 from utils import visualization_utils_DB as vis_util
 
-
+# Name of the directory that contains the object detection models
 MODEL_NAME = 'inference_graph'
 IMAGE_NAME = 'test_mango.jpg'
 
 CWD_PATH = os.getcwd()
 
-# Path to frozen detection graph .pb file,contains the model that is used for object detection.
+
+#path to the frozen_inference.pb file for object detection
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph_mango.pb')
 
 # Path to label map file
@@ -56,6 +62,7 @@ detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
 num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
 
+#this opens the images
 image = cv2.imread(PATH_TO_IMAGE)
 image_expanded = np.expand_dims(image, axis=0)
 
@@ -66,6 +73,7 @@ image_expanded = np.expand_dims(image, axis=0)
 
 
 
+#this function imported from visualization utils is used to draw the box around the images and detect  the object
 vis_util.visualize_boxes_and_labels_on_image_array(
     image,
     np.squeeze(boxes),

@@ -1,3 +1,7 @@
+######## Video Object Detection Using Tensorflow-trained Classifier #########
+
+
+#importing necessary packages for video classification
 import os
 import cv2
 import numpy as np
@@ -6,22 +10,25 @@ import sys
 
 sys.path.append("..")
 
-
+#imported utilities also visualization_utils_db for fruits database
 from utils import label_map_util
 from utils import visualization_utils_DB as vis_util
 
-
+# Name of the directory that contains the object detection models
 MODEL_NAME = 'inference_graph'
 VIDEO_NAME = 'test_mango.mp4'
 
 
 CWD_PATH = os.getcwd()
 
-
+#path to the frozen_inference.pb file
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph_mango.pb')
 
+
+#Path to label map file
 PATH_TO_LABELS = os.path.join(CWD_PATH,'training','mango_labelmap.pbtxt')
 
+#path to video file 
 PATH_TO_VIDEO = os.path.join(CWD_PATH,VIDEO_NAME)
 
 
@@ -52,6 +59,7 @@ detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
 
 num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
+#this opens the video
 video = cv2.VideoCapture(PATH_TO_VIDEO)
 
 while(video.isOpened()):
@@ -63,7 +71,8 @@ while(video.isOpened()):
         [detection_boxes, detection_scores, detection_classes, num_detections],
         feed_dict={image_tensor: frame_expanded})
 
-   
+
+#this function imported from visualization utils is used to draw the box around the images and detect   
     vis_util.visualize_boxes_and_labels_on_image_array(
         frame,
         np.squeeze(boxes),
