@@ -1,4 +1,4 @@
-
+#importing necessary dependencies
 import os
 import cv2
 import numpy as np
@@ -10,17 +10,19 @@ sys.path.append("..")
 
 
 from utils import label_map_util
-from utils import visualization_utils as vis_util
+from utils import visualization_utils_DB as vis_util
 
 MODEL_NAME = 'inference_graph'
 
+#Here we don't need an image 
 
 CWD_PATH = os.getcwd()
 
+#path to the frozen graph and the labelmap
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph_banana.pb')
 
 PATH_TO_LABELS = os.path.join(CWD_PATH,'training','banana_labelmap.pbtxt')
-
+#again here number of objects is one and is banana in this case
 NUM_CLASSES = 1
 
 
@@ -66,7 +68,7 @@ while(True):
         [detection_boxes, detection_scores, detection_classes, num_detections],
         feed_dict={image_tensor: frame_expanded})
 
-
+#this part is for visualizing the rectangular box with the information 
     vis_util.visualize_boxes_and_labels_on_image_array(
         frame,
         np.squeeze(boxes),
