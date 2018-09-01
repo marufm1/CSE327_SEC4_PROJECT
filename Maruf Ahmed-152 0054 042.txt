@@ -12,6 +12,7 @@ Tasks:
 8. banana folder also uploaded in images
 9. Added the Requirement.txt file for Docker.
 10. Helped with the Dockerfile
+11. Also previously added the Object_detection_webcam_banana.py file which can detect Banana object using the webcam of a computer.
 
 
 
