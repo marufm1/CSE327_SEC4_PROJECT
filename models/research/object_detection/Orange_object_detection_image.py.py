@@ -10,7 +10,7 @@ sys.path.append("..")
 
 
 from utils import label_map_util
-from utils import visualization_utils as vis_util
+from utils import visualization_utils_DB as vis_util
 
 MODEL_NAME = 'inference_graph'
 IMAGE_NAME = 'test_orange.jpg'
